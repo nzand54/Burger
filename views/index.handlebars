@@ -1,0 +1,16 @@
+<center>
+      <h4>It's Patty Time!</h4>
+      <div>
+        {{#each burgers}}
+          <form action="api/burgers/{{id}}" method="POST">
+            <div>
+              <div>{{id}}. {{burger_name}}</div>
+                  <button type="submit">Devoured!</button>
+            </div>
+          </form>
+        {{/each}}
+
+      </div>
+    </div>
+  </center>
+</div>
